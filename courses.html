@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>課程管理</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #ffeedd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>課程管理</h1>
+
+    <h2>新增課程</h2>
+    <form action="{{ url_for('courses') }}" method="post">
+        名稱: <input type="text" name="name"><br>
+        描述: <textarea name="description"></textarea><br>
+        <input type="submit" value="新增">
+    </form>
+
+    <h2>課程列表</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>名稱</th>
+            <th>描述</th>
+        </tr>
+        {% for course in courses %}
+        <tr>
+            <td>{{ course[0] }}</td>
+            <td>{{ course[1] }}</td>
+            <td>{{ course[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="{{ url_for('main') }}">返回主頁面</a></p>
+</body>
+</html>
