@@ -1,0 +1,27 @@
+-- 建立資料庫(如果不存在)
+CREATE DATABASE IF NOT EXISTS student_management;
+USE student_management;
+
+-- 建立 students 表格(如果不存在)
+CREATE TABLE IF NOT EXISTS students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL
+);
+
+-- 建立 courses 表格(如果不存在)
+CREATE TABLE IF NOT EXISTS courses (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description TEXT
+);
+
+-- 建立 grades 表格(如果不存在)
+CREATE TABLE IF NOT EXISTS grades (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  student_id INT NOT NULL,
+  course_id INT NOT NULL,
+  grade DECIMAL(5,2) NOT NULL,
+  FOREIGN KEY (student_id) REFERENCES students(id),
+  FOREIGN KEY (course_id) REFERENCES courses(id)
+);
