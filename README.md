@@ -6,13 +6,13 @@ https://dev.mysql.com/downloads/installer/
 > For the SQL schema required for this example, please refer to the [sql.txt](sql.txt) file.
 
 The second step is to install the python package flask and flask_mysqldb.
-```dos
+```r
 pip install flask
 pip install flask_mysqldb
 ```
 
 The third step is to execute the program, as follows
-```python
+```r
 python app.py
 ```
 
