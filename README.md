@@ -22,6 +22,6 @@ After that, you can see the execution screen on the browser (http://127.0.0.1:50
 ![courses management image](https://github.com/user-attachments/assets/1dbd4092-ac62-4e24-8313-7fccfee2b7ff)
 ![grades management image](https://github.com/user-attachments/assets/0ce5deb8-eeca-49be-af20-f0c1ca93cfb0)
 
-[!NOTE]
-Regarding this example, do you think there is anything that needs to be improved? 
-For example: `mysql password` should not use root privileges and be written in the program.
+> [!NOTE]
+> Regarding this example, do you think there is anything that needs to be improved? 
+> For example: `mysql password` should not use root privileges and be written in the program.
