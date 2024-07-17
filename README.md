@@ -12,7 +12,7 @@ pip install flask_mysqldb
 ```
 
 The third step is to execute the program, as follows
-```dos
+```python
 python app.py
 ```
 
