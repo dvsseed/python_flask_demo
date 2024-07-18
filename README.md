@@ -3,6 +3,7 @@ This is a simple student performance management system (using Python Flask + MyS
 
 ## Basic coding skills
 > This simple example will teach  Python, CSS, HTML, or MySQL.
+> 
 > IDE and code editor for software developers: Visual Studio Code
 
 ## Proceeding steps
