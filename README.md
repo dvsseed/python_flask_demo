@@ -2,9 +2,9 @@
 This is a simple student performance management system (using Python Flask + MySQL)
 
 ## Basic coding skills
-> This simple example will teach  Python, CSS, HTML, or MySQL.
+> This simple example will teach `Python, CSS, HTML`, or `MySQL`.
 > 
-> IDE and code editor for software developers: Visual Studio Code
+> IDE and code editor for software developers: `Visual Studio Code`
 
 ## Proceeding steps
 The first step is to install the MySQL software.
